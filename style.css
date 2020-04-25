@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;  
+    background: rgb(136, 0, 0);;
+    min-width: 650px;
+    min-height: auto;
+    overflow: hidden;
+}
+
+#main{
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    width: 600px;
+    height: 900px;
+    top: 30px;
+    border-radius: 10px;
+}
+
+#first {
+    background-image: url(lenny2.jpg);
+    position: absolute;
+    background-size: 600px 900px;
+    width: 600px;
+    height: 900px;
+    transition: 400ms ease-in-out;
+    z-index: 0;
+    opacity: 1;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    
+}
+
+#first.click {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#first h1 {
+    position: absolute;
+    font-size: 110px;
+    top: 280px;
+    color: rgba(255, 255, 255, 0.623);
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0);
+    mix-blend-mode: hard-light;
+    background: rgba(143, 0, 0, 0.65);
+    background-size: 600px 900px ;
+}
+
+#mainImg {
+    position: absolute;
+    display: block;
+    width: 600px;
+    height: 900px;
+    opacity: 100%;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+#menu{
+    position: absolute;
+    margin-left: auto;
+    margin-top: auto;
+    height: 50px;
+    width: 600px;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.4;
+    transition: 400ms ease-in-out;
+}
+
+#menu.click{
+    opacity: 1;
+    z-index: 1;
+}
+
+#menu ul {
+    right: 0px;
+    margin-right: 20px;
+    position: absolute;
+    bottom: 10px;
+    background:rgba(143, 0, 0, 0.65) ;
+    width: 560px;
+    border-radius: 20px;
+}
+
+#menu ul li {
+    display: inline-block;
+    list-style: none;
+    line-height: 60px;
+    font-weight: bold;
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	color: rgb(231, 231, 231);
+	padding: 6px ;
+    text-decoration: none;
+    margin-left: 34px;
+    margin-right: 10px;
+    
+  
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#menu ul li.active {
+    color : rgb(112, 112, 112);
+    background : rgb(219, 219, 219);
+}
+
+.content{
+   position: absolute;
+   width: 580px;
+   height: 780px;
+   margin-left: 10px;
+   margin-top: 15px;
+   border-radius: 10px;
+}
+
+.content h2 {
+    font-size: 30px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.content p {
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+#story {
+    background: #dddddde1;
+    z-index: -1;
+    opacity: 0;
+    transition: 400ms linear;
+}
+
+#story.click{
+    z-index: 1;
+    opacity: 1;
+}
+
+#activity {
+    background: #dddddde1;
+    z-index: -1;
+    opacity: 0;
+    transition: 400ms linear;
+}
+
+#activity.click {
+    z-index: 1;
+    opacity: 1;
+}
+
+#activity h2{
+    margin-bottom: 30px;
+}
+
+#img1Content{
+    width: 40%;
+    height: 138px;
+    margin-left: 0px;
+    opacity: 0.7;
+    margin-left: 55px;
+}
+
+#img2Content{
+    width: 40%;
+    height: auto;
+    opacity: 0.7;
+    margin-left: 10px;
+}
+
+#appointment {
+    background: #ddddddec;
+    z-index: -1;
+    text-align: justify;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    opacity: 0;
+    transition: 400ms ease-in-out;
+}
+
+#appointment.click {
+    z-index: 1;
+    opacity: 1;
+}
+
+#appointment h2 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#quit {
+    position: absolute;
+    right: 10px;
+    top: 3px;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+input, select, textarea{
+    width: 220px;
+    height:20 ;
+    border-radius: 5px;
+    margin-left: 180px;
+    margin-top: 20px;
+}
+
+textarea{
+    height: 200px;
+}
+
+.check{
+    max-width: 20px;
+}
+
+#kirim{
+    width: 200px;
+    height: 30px;
+    border-color: rgb(107, 107, 107);
+    border-radius: 5px;
+    margin-left: 190px; 
+    background-color: #fff;
+}
+
+h4{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: roboto;
+    margin-top: 30px;
+    color: #333;
+}
